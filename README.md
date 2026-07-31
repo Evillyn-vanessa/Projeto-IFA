@@ -1,1 +1,3 @@
 # Projeto-IFA
+PROMPT
+Chat estamos elaborando um site acerca do astecgmatismo, miopia, e daltonismo (ou seja, doenças oculares). o site terá carater informativo e explicativo, e por um fim um jogo de perguntas e respostas (não esquecer de fazer as perguntas e respostas). No Index eu quero um estrurur muito bem definida, alem de anotações feitas por vc mostrando o que cada parte significa e faz. Ao entra no site vai aperecer 
