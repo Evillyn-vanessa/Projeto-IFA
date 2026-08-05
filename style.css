@@ -252,6 +252,7 @@ body {
 
 .logo{
     justify-self: start;
+    margin-right: 50px;
 }
 
 .menu-navegacao ul{
