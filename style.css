@@ -258,7 +258,7 @@ body {
 .menu-navegacao ul{
     display:flex;
     gap:30px;
-    margin:0;
+    margin-left: 40px;
     padding:0;
     list-style:none;
 }
