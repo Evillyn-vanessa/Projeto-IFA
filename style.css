@@ -254,7 +254,9 @@ body {
     justify-self: start;
 }
 
-
+.menu-navegacao{
+    justify-self: center;
+}
 
 .cabecalho-site h1 {
   margin: 0;
