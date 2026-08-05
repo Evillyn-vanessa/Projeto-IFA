@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde Visual & Acessibilidade</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="modo-normal">
+
+  <div class="acessibilidade-zoom">
+    <button id="btn-zoom-in" title="Aumentar Zoom" aria-label="Aumentar Zoom">+</button>
+    <button id="btn-zoom-out" title="Diminuir Zoom" aria-label="Diminuir Zoom">-</button>
+  </div>
+
+  <section id="tela-inicial" class="hero-section">
+    <div class="card-questionario">
+      <h1>Saúde da Visão</h1>
+      <p class="subtitulo">Você possui ou foi diagnosticado com alguma destas condições?</p>
+      
+      <div class="opcoes-iniciais">
+        <button class="btn-opcao" data-condicao="miopia">Miopia</button>
+        <button class="btn-opcao" data-condicao="daltonismo">Daltonismo</button>
+        <button class="btn-opcao" data-condicao="astigmatismo">Astigmatismo</button>
+        <button class="btn-opcao" data-condicao="nenhuma">Nenhuma</button>
+      </div>
+
+      <div class="saiba-mais-container">
+        <a href="https://www.cbo.com.br" target="_blank" rel="noopener noreferrer" class="link-saiba-mais">
+          Saiba mais no Conselho Brasileiro de Oftalmologia ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tela-teste" class="escondido">
+    <button id="btn-voltar-inicio" class="btn-voltar">← Voltar à página inicial</button>
+    
+    <div class="container-teste">
+      <h2>Mini-Teste de Triagem Visual</h2>
+      <p>Responda às 10 perguntas simples para um feedback indicativo:</p>
+
+      <form id="form-quiz">
+        <div id="perguntas-container"></div>
+        <button type="button" id="btn-resultado-quiz" class="btn-enviar">Ver Feedback</button>
+      </form>
+
+      <div id="resultado-quiz" class="escondido">
+        <h3>Resultado do Seu Teste</h3>
+        <p id="texto-feedback"></p>
+        <button id="btn-refazer-quiz" class="btn-secundario">Refazer Teste</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="conteudo-principal" class="escondido">
+    <button id="btn-voltar-principal" class="btn-voltar-fixo">← Mudar Condição</button>
+    
+    <header class="cabecalho-site">
+      <div class="logo">
+        <h1 id="titulo-condicao">Saúde Visual</h1>
+      </div>
+      <nav class="menu-navegacao">
+        <ul>
+          <li><a href="#oque-e">O que é</a></li>
+          <li><a href="#causas">Causas</a></li>
+          <li><a href="#sintomas">Sintomas</a></li>
+          <li><a href="#tratamento">Tratamento</a></li>
+          <li><a href="#simulador">Simulador Visual</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container-conteudo">
+      <section id="oque-e" class="secao-info">
+        <h2>O que é</h2>
+        <p id="texto-oque-e"></p>
+      </section>
+
+      <section id="causas" class="secao-info">
+        <h2>Causas</h2>
+        <p id="texto-causas"></p>
+      </section>
+
+      <section id="sintomas" class="secao-info">
+        <h2>Sintomas</h2>
+        <ul id="lista-sintomas"></ul>
+      </section>
+
+      <section id="tratamento" class="secao-info">
+        <h2>Tratamento</h2>
+        <p id="texto-tratamento"></p>
+      </section>
+
+      <section id="simulador" class="secao-info simulador-box">
+        <h2>Simulador Visual Interativo</h2>
+        <p>Clique nos botões abaixo para simular alterações visuais diretamente nesta página:</p>
+        <div class="botoes-simulador">
+          <button id="sim-daltonismo" class="btn-simulacao">Visão Daltônica (Deuteranopia)</button>
+          <button id="sim-astigmatismo" class="btn-simulacao">Visão com Astigmatismo (Luz Borrada)</button>
+          <button id="sim-reset" class="btn-simulacao btn-reset">Visão Normal</button>
+        </div>
+        <div class="demostracao-luzes">
+          <p>Área de Teste de Visão (Observe o texto e a lâmpada abaixo):</p>
+          <div class="ponto-luz" id="ponto-luz">💡 Ponto de Luz Noturno</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape-site">
+      <p>&copy; 2026 - Projeto Educativo sobre Saúde da Visão. Todos os direitos reservados.</p>
+      <p>Aviso: Este site possui fins puramente educativos e não substitui a consulta com um médico oftalmologista.</p>
+    </footer>
+  </div>
+
+  <button id="btn-modo-escuro" aria-label="Alternar Modo Escuro" title="Modo Escuro">🌙 Modo Escuro</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
