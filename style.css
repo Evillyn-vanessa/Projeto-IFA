@@ -2,13 +2,13 @@
    1. VARIÁVEIS CSS E CONFIGURAÇÕES GERAIS
    ========================================================================== */
 :root {
-  --bg-principal: #1c60aa;;
+   --bg-principal: #EAF4FF;
   --texto-principal: #0F172A;
-  --card-bg: #FFFFFF;
+  --card-bg: #f8f6f6;
   --cor-tematica: #2B6CB0; /* Cor padrão Azul (Miopia) */
   --fonte-principal: 'Inter', sans-serif;
   --borda-raio: 12px;
-  --sombra: 0 4px 15px rgba(0,0,0,0.08);
+  --sombra: 0 4px 15px rgba(207, 199, 199, 0.08);
 }
 
 /* Modos de Fonte por Condição Visual */
