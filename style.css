@@ -230,32 +230,31 @@ body {
   border-left: 5px solid var(--cor-tematica);
   border-radius: 4px;
 }
-========================================== */
 /* ==========================================================================
    5. ESTRUTURA DO SITE PRINCIPAL
    ========================================================================== */
 .cabecalho-site{
     position: sticky;
     top: 0;
-    background-color: var(--card-bg);
+    background: var(--card-bg);
     box-shadow: var(--sombra);
+    height: 70px;
 
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-
+    display: flex;
     align-items: center;
 
-    padding: 15px 40px;
-
+    position: sticky;
     z-index: 100;
 }
 
 .logo{
-    justify-self: start;
+    margin-left: 40px;
 }
 
 .menu-navegacao{
-    justify-self: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .cabecalho-site h1 {
