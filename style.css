@@ -259,7 +259,7 @@ body {
     display:flex;
     gap:30px;
     margin:0;
-    padding-left: 40px;
+    padding:0;
     list-style:none;
 }
 
