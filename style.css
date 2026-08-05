@@ -2,7 +2,7 @@
    1. VARIÁVEIS CSS E CONFIGURAÇÕES GERAIS
    ========================================================================== */
 :root {
-  --bg-principal: #1995e7;
+  --bg-principal: --bg-principal: #EAF4FF;;
   --texto-principal: #0F172A;
   --card-bg: #FFFFFF;
   --cor-tematica: #2B6CB0; /* Cor padrão Azul (Miopia) */
