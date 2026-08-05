@@ -251,6 +251,13 @@ body {
     margin-left: 40px;
 }
 
+.btn-voltar-fixo{
+    position: fixed;
+    top: 85px;
+    left: 20px;
+    z-index: 200;
+}
+
 .menu-navegacao{
     position: absolute;
     left: 50%;
@@ -312,12 +319,7 @@ body {
   font-size: 0.85rem;
 }
 
-.btn-voltar-fixo{
-    position: fixed;
-    top: 85px;
-    left: 20px;
-    z-index: 200;
-}
+
 
 /* ==========================================================================
    6. SIMULADOR VISUAL (FILTROS)
