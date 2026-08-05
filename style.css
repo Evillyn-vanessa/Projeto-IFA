@@ -240,7 +240,7 @@ body {
   background-color: var(--card-bg);
   box-shadow: var(--sombra);
   display: flex;
-  justify-content: space-between;
+   justify-content: center;
   align-items: center;
   padding: 15px 40px;
   z-index: 100;
@@ -254,7 +254,6 @@ body {
 
 .menu-navegacao ul {
   display: flex;
-   align-items: center;
   list-style: none;
   gap: 20px;
   margin: 0;
